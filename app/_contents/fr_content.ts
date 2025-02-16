@@ -4,6 +4,7 @@ export const frContent={
     name:"Mendrika",
     lastname:"Randrianarison",
     jobTitle: "Développeuse fullstack",
+    jobTitles: ["Développeuse", "fullstack"],
     menuItem:{
         archievement:"Fais marquants",
         contact:"Contacts",
@@ -12,7 +13,7 @@ export const frContent={
         project:"Projets",   
         service:"Mes services"
     },
-    descriptiveText:"Demander à chat",
+    descriptiveText:"Lorem ipsum dolor sit amet consectetur. Sed at eleifend elit lorem lorem eu molestie cursus. Aliquam ullamcorper venenatis quis imperdiet fusce quis pulvinar. Vehicula dignissim elit nec orci fusce vestibulum est. Nisl dictumst congue netus vitae mauris nulla duis enim. Ultrices massa placerat nec risus mauris cursus blandit vitae. Nec ultrices faucibus eu pellentesque arcu vitae eget. Morbi nibh egestas faucibus ipsum tempus. Bibendum vitae arcu nunc nec imperdiet in tellus. Nisl ridiculus vulputate aliquam arcu maecenas adipiscing. Morbi suspendisse turpis convallis et aliquam habitasse convallis lectus. Habitasse urna libero ridiculus eleifend nunc elementum bibendum.",
     downloadCV:"Télécharger mon cv",
     experienceInfo:[
         { title:"Ibonia", date:"Août 2023 - maintenant", description:["",""]},

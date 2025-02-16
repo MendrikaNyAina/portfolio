@@ -1,6 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react"; // Icônes de ShadCN UI
 import { useTheme } from "next-themes";
 
@@ -9,11 +10,11 @@ export function ThemeToggle() {
 
 
   return (
-    <button
+    <Button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="rounded-lg p-2 transition-all "
+      variant="logo" size="icon"
     >
-      {theme === "light" ? <Moon className="text-destructive" size={20} /> : <Sun className="text-destructive" size={20} />}
-    </button>
+      {theme === "light" ? <Moon className="text-destructive" size={22} /> : <Sun className="text-destructive" size={22} />}
+    </Button>
   );
 }

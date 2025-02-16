@@ -10,13 +10,12 @@ import {
     NavigationMenuList
 } from "@/components/ui/navigation-menu";
 import { content } from "../_contents/content";
-import { Section } from "./Section";
 import { ThemeToggle } from "./ThemeToggle";
 
 export const Header = () => {
     const desc = content();
     return (
-        <Section className="absolute items-center justify-between">
+        <header className="fixed left-0 top-0 m-auto flex w-full items-center justify-between px-4">
             <div className="flex items-center">
                 <Logo></Logo>
                 <div>
@@ -42,7 +41,7 @@ export const Header = () => {
                 </NavigationMenuList>
 
             </NavigationMenu>
-        </Section>
+        </header>
     )
 }
 const MenuItem = (item: string, link: string) => {

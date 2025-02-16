@@ -1,13 +1,12 @@
 /* eslint-disable react/react-in-jsx-scope */
 "use client"
-import { PropsWithChildren } from "react"
-interface Props extends PropsWithChildren{
-    className?:string
-}
+
+import { Props } from "../_interface/BasicProps"
+
 
 export const Section=(props:Props)=>{
     return (
-        <section className={"m-auto flex w-full px-4 "+props.className}>
+        <section className={"m-auto flex w-full px-12 "+props.className}>
             {props.children}
         </section>
     )
