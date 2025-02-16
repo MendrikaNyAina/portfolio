@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background:#ffffff00;
+    --background1:#F8F8F8;
+    --background2:#FFFFFF;
+    --foreground: #130F26;
+    --card:  #ffffff00;
+    --card-foreground: #130F26;
+    --popover: #ffffff;
+    --popover-foreground:#130F26;
+    --primary: #88DFF2;
+    --primary-foreground: #ffffff;
+    --secondary: #E8BDF2;
+    --secondary-foreground: #ffffff;
+    --muted: #ffffff00;
+    --muted-foreground: #D9E0F2;
+    --accent: #ffffff00;
+    --accent-foreground: #056BF1;
+    --destructive: #DAA1F2;
+    --destructive-foreground: #ffffff;
+    --border: #ffffff00;
+    --input: #ffffff00;
+    --ring:#ffffff00;
+    --chart-1: #88DFF2;
+    --chart-2: #E8BDF2;
+    --chart-3: #056BF1;
+    --chart-4: #DAA1F2;
+    --chart-5: #D9E0F2;
+    --radius: 0.5rem;
+    --hover:#c1c1c181;
+  }
+  .dark {
+    --background: #ffffff00;
+    --background1: #130F26;
+    --background2: #302A58;
+    --foreground: #FFFFFF;
+    --card:  #ffffff00;
+    --card-foreground: #ffffff;
+    --popover: #302A58;
+    --popover-foreground:#ffffff;
+    --primary: #56F2A9;
+    --primary-foreground: #ffffff;
+    --secondary: #897ABF;
+    --secondary-foreground: #ffffff;
+    --muted: #ffffff00;
+    --muted-foreground: #130F26;
+    --accent: #ffffff00;
+    --accent-foreground: #88DFF2;
+    --destructive: #7D458C;
+    --destructive-foreground: #ffffff;
+    --border: #ffffff00;
+    --input: #ffffff00;
+    --ring:#ffffff00;
+    --chart-1: #56F2A9;
+    --chart-2: #897ABF;
+    --chart-3: #88DFF2;
+    --chart-4: #7D458C;
+    --chart-5: #D9E0F2;
+    --radius: 0.5rem;
+    --hover:rgba(183, 183, 183, 0.506)
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply text-foreground;
+  }
+}
+
+@font-face {
+  font-family: 'Wrestlemania';
+  src: url('/fonts/WRESTLEMANIA.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
