@@ -4,7 +4,9 @@
 import { Header } from "./_components/Header";
 import { SectionAbout } from "./_components/sections/SectionAbout";
 import { SectionExperience } from "./_components/sections/SectionExperience";
+import { SectionFormation } from "./_components/sections/SectionFormation";
 import { SectionProject } from "./_components/sections/SectionProject";
+import { SectionService } from "./_components/sections/SectionService";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
         <SectionAbout />
         <SectionExperience />
         <SectionProject />
+        <SectionService />
+        <SectionFormation />
       </main>
     </div>
   );

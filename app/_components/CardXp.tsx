@@ -18,7 +18,7 @@ export const CardXp = (props: CardXpProps) => {
                 <TypographyH3 className="text-xl">{props.content.title} </TypographyH3>
                 <Badge variant="outline" className="text-secondary">{props.content.date} </Badge>
             </div>
-            <ul className="list-disc text-base">
+            <ul className="list-disc text-sm">
                 {props.content.description.map((txt, cle) => {
                     return (<li key={cle}>{txt} </li>);
                 })}

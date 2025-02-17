@@ -15,8 +15,8 @@ export const SectionExperience = () => {
     const desc = content();
     return (<SectionWithTitle title={desc.titleItem.experience} >
         <div className={`grid grid-cols-[45%_10%_45%] ${"grid-rows-" + (desc.experienceInfo.length)} gap-4 p-4`}>
-            <div key="lambda" className="relative">
-                <img src={pic2.src} alt={pic2.alt} className="absolute bottom-0" />
+            <div key="lambda" className="flex items-start justify-end">
+                <img src={pic2.src} alt={pic2.alt} className="max-w-[400px] place-self-end" />
             </div>
             <div className={`${"row-span-" + (desc.experienceInfo.length)} relative flex items-center justify-center `}>
                 <div className="absolute top-0 h-6 w-6 rounded-full bg-secondary"></div>
@@ -26,7 +26,7 @@ export const SectionExperience = () => {
 
             {desc.experienceInfo.map((elt, key) => {
                 if (key == 0) {
-                    return <CardXp key={key} content={elt}></CardXp>;
+                    return <CardXp key={key} content={elt} className="self-start"></CardXp>;
                 } else if (key % 2 == 0) {
                     return <><div key={key + "a"}></div> <CardXp key={key} content={elt}></CardXp></>
                 } else {
