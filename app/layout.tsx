@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ThemeProvider>
-          <div className={`${jost.variable} h-dvh bg-gradient-to-b from-background1 to-background2 bg-cover bg-no-repeat font-jost`}>
+          <div className={`${jost.variable}h-dvh bg-gradient-to-b from-background1 to-background2 bg-cover bg-fixed bg-no-repeat font-jost`}>
             {children}
           </div>
         </ThemeProvider>

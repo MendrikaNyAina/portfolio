@@ -2,6 +2,7 @@
 
 import { Header } from "./_components/Header";
 import { SectionAbout } from "./_components/SectionAbout";
+import { SectionExperience } from "./_components/SectionExperience";
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
       <Header></Header>
       <main className="pt-20">
 
-        <SectionAbout></SectionAbout>
+        <SectionAbout />
+        <SectionExperience />
       </main>
     </div>
   );

@@ -17,7 +17,7 @@ export const SectionAbout = () => {
 
     const desc = content();
     return (
-        <Section className="grid max-w-[1200px] grid-cols-2 items-center justify-center pt-7">
+        <Section className=" mb-28 grid grid-cols-2 items-center justify-center pt-7 ">
             <div className="relative h-[510px]" >
                 <TypographyH1 className="pl-10 pt-6 leading-[0.65]">
                     <span className="block">{desc.lastname} </span>

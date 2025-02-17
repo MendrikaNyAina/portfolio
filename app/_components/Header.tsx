@@ -15,7 +15,7 @@ import { ThemeToggle } from "./ThemeToggle";
 export const Header = () => {
     const desc = content();
     return (
-        <header className="fixed left-0 top-0 m-auto flex w-full items-center justify-between px-4">
+        <header className="fixed left-0 top-0 z-10 m-auto flex w-full items-center justify-between px-4 backdrop-blur-md">
             <div className="flex items-center">
                 <Logo></Logo>
                 <div>
