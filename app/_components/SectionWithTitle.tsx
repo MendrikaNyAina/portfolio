@@ -7,7 +7,7 @@ type SectionProps={
 } & Props
 
 export const SectionWithTitle=(props:SectionProps )=>{
-    return (<Section className={props.className}>
+    return (<Section className={"pt-10 "+props.className}>
         <TypographyH1 >{props.title} </TypographyH1>
         {props.children}
     </Section>)

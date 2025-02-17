@@ -3,11 +3,11 @@
 import { Button } from "@/components/ui/button";
 import { MousePointer2 } from "lucide-react";
 import { useTheme } from "next-themes";
-import { content } from "../_contents/content";
-import { Frame } from "./Frame";
-import { Section } from "./Section";
-import TypographyH1 from "./TypographyH1";
-import TypographyH2 from "./TypographyH2";
+import { content } from "../../_contents/content";
+import { Frame } from "../Frame";
+import { Section } from "../Section";
+import TypographyH1 from "../TypographyH1";
+import TypographyH2 from "../TypographyH2";
 export const SectionAbout = () => {
     const { theme } = useTheme();
 
@@ -34,11 +34,12 @@ export const SectionAbout = () => {
             <div className="relative h-[510px]">
                 <Frame className=" absolute right-0 top-0  border-r-8 border-t-8"></Frame>
                 <p className="p-7">{desc.descriptiveText} </p>
-                <div className="relative flex justify-end pr-7">                  
-                    <div className="rounded-lg border-4 border-solid border-primary p-2">
+                <div className=" flex justify-end pr-7">                  
+                    <div className="relative rounded-lg border-4 border-solid border-primary p-2">
                         <Button variant="secondary">{desc.downloadCV} </Button>
+                        <MousePointer2 className="absolute bottom-0 right-0 fill-background2 text-accent-foreground"></MousePointer2>
                     </div>
-                    <MousePointer2 className="absolute bottom-0 right-0 fill-background2 text-accent-foreground"></MousePointer2>
+                    
                 </div>
             </div>
         </Section>
