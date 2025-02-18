@@ -14,15 +14,17 @@ export const SectionExperience = () => {
 
     const desc = content();
     return (<SectionWithTitle title={desc.titleItem.experience} >
-        <div className={`grid grid-cols-[45%_10%_45%] ${"grid-rows-" + (desc.experienceInfo.length)} gap-4 p-4`}>
+        <div className={`grid auto-rows-auto  grid-cols-[45%_10%_45%] gap-4 p-4`}>
             <div key="lambda" className="flex items-start justify-end">
                 <img src={pic2.src} alt={pic2.alt} className="max-w-[400px] place-self-end" />
             </div>
-            <div className={`${"row-span-" + (desc.experienceInfo.length)} relative flex items-center justify-center `}>
+            <div className={`relative col-start-2 ${"row-span-"+(desc.experienceInfo.length)} flex items-center justify-center`}>
                 <div className="absolute top-0 h-6 w-6 rounded-full bg-secondary"></div>
                 <div className="h-full w-3 rounded-lg bg-secondary"></div>
                 <div className="absolute bottom-0 h-6 w-6 rounded-full bg-secondary"></div>
             </div>
+            
+
 
             {desc.experienceInfo.map((elt, key) => {
                 if (key == 0) {

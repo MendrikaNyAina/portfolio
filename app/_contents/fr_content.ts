@@ -43,10 +43,10 @@ export const frContent = {
         softSkill: ["Agil/Scrum","Ecoute native","Compréhension des besoins", "Esprit d'équipe","Rédaction claire","Adaptabilité","Résoolution de problèmes","Gestion du temps"]
     },
     formationInfo: [
-        { date: "20 janvier 2025", icon:"", title: "", description: "" },
-        { date: "", icon: "", title: "", description: "" },
-        { date: "", icon: "", title: "", description: "" },
-        { date: "", icon: "", title: "", description: "" },
+        { date: "20 janvier 2025", icon:"", title: "Formation 1", description: "Habitasse urna libero ridiculus eleifend nunc " },
+        { date: "20 janvier 2025", icon: "", title: "Formation 1", description: "Habitasse urna libero ridiculus eleifend nunc " },
+        { date: "20 janvier 2025", icon: "", title: "Formation 1", description: "Habitasse urna libero ridiculus eleifend nunc " },
+        { date: "20 janvier 2025", icon: "", title: "Formation 1", description: "Habitasse urna libero ridiculus eleifend nunc " },
     ],
     archievementInfo: [
         { title: "", date: "", description: "", technologies: "" },
