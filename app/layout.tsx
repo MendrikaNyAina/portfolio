@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import type { Metadata } from "next";
 
-import { Jost } from "next/font/google";
+import { Jost, Karantina } from "next/font/google";
 import { ThemeProvider } from "./_provider/ThemeProvider";
 import "./globals.css";
 
@@ -11,7 +11,12 @@ const jost = Jost({
   variable: "--font-jost",
   display: "swap"
 })
-
+const karantina = Karantina({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-karantina",
+  display: "swap"
+})
 export const metadata: Metadata = {
   title: "Randrianarison Mendrika - Developer fullstack",
   description: "Java, react, typescript, sql, neo4J",
@@ -22,14 +27,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
 
     <html lang="en">
-      <body>
+      <body className={`${jost.variable} ${karantina.variable}`}>
         <ThemeProvider>
-          <div className={`${jost.variable}h-dvh bg-gradient-to-b from-background1 to-background2 bg-cover bg-fixed bg-no-repeat font-jost`}>
             {children}
-          </div>
         </ThemeProvider>
       </body >
 

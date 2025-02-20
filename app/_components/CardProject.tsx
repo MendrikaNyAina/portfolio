@@ -16,7 +16,7 @@ type CardProjectProps = {
 /* eslint-disable react/react-in-jsx-scope */
 export const CardProject = (props: CardProjectProps) => {
     const desc = content();
-    return (<div className={"grid grid-cols-[40%_60%] grid-rows-1 gap-0 mb-10 " + props.className}>
+    return (<div className={"grid grid-cols-[40%_60%] grid-rows-1 gap-0 mb-10 " + (props.className?props.className:"")}>
         <div className="fit">
             <img src="/img/model.png" alt="model" />
         </div>

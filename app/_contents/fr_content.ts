@@ -7,7 +7,7 @@ export const frContent = {
     jobTitle: "Développeuse fullstack",
     jobTitles: ["Développeuse", "fullstack"],
     menuItem: {
-        archievement: "Fais marquants",
+        archievement: "Faits marquants",
         contact: "Contacts",
         experience: "Experiences",
         formation: "Formations",
@@ -40,45 +40,56 @@ export const frContent = {
     },
     serviceInfo: {
         hardSkill: ["ReactJs", "Java Spring boot", "Angular", "Python", "NodeJs", "Mysql", "Postresql", "Oracle", "Neo4J", "ReactNative", "Php", "Docker"],
-        softSkill: ["Agil/Scrum","Ecoute native","Compréhension des besoins", "Esprit d'équipe","Rédaction claire","Adaptabilité","Résoolution de problèmes","Gestion du temps"]
+        softSkill: ["Agil/Scrum", "Ecoute native", "Compréhension des besoins", "Esprit d'équipe", "Rédaction claire", "Adaptabilité", "Résoolution de problèmes", "Gestion du temps"]
     },
     formationInfo: [
-        { date: "20 janvier 2025", icon:"", title: "Formation 1", description: "Habitasse urna libero ridiculus eleifend nunc " },
+        { date: "20 janvier 2025", icon: "", title: "Formation 1", description: "Habitasse urna libero ridiculus eleifend nunc " },
         { date: "20 janvier 2025", icon: "", title: "Formation 1", description: "Habitasse urna libero ridiculus eleifend nunc " },
         { date: "20 janvier 2025", icon: "", title: "Formation 1", description: "Habitasse urna libero ridiculus eleifend nunc " },
         { date: "20 janvier 2025", icon: "", title: "Formation 1", description: "Habitasse urna libero ridiculus eleifend nunc " },
     ],
     archievementInfo: [
-        { title: "", date: "", description: "", technologies: "" },
-        { title: "", date: "", description: "", technologies: "" },
+        { title: "Hackathon zahgeek", date: "20 Juillet 2023", description: "Une plateforme e-commerce avec intégration 3D", technologies: ["Ruby", "Angular", "freeJs"] },
+        { title: "GamJam 2022", date: "12 Juin 2022", description: "Jeu kapoaka", technologies: ["Godot"] },
     ],
-    contactInfo: {
+    archievementLabel: {
+        about: "A propos",
+        technology: "Comment c'était fait",
+        githubLink: "Lien github"
+    },
+    contactInfo: [
+        { icon: "email", link: "mailto:mendrika.nyainaf@gmail.com" },
+        { icon: "whatsapp", link: "https://wa.me/261342236379" },
+        { icon: "linkedin", link: "www.linkedin.com/in/mendrika-randrianarison-497a87272" },
+        { icon: "phone", link: "tel:+261342236379" },
+    ]
+    ,
+    contactLabel: {
         form: {
             name: {
                 text: "Nom",
-                placeholder: ""
+                placeholder: "Nom"
             },
             email: {
                 text: "Email",
-                placeholder: ""
+                placeholder: "Email"
             },
             object: {
                 text: "Objet",
-                placeholder: ""
+                placeholder: "Object"
             },
             message: {
                 text: "Message",
-                placeholder: ""
+                placeholder: "Message"
             },
             button: "Contacter"
         },
-        query: ["Une requête?", "Contactez-moi!"],
-        contact: [
-            { icon: "email", link: "" },
-            { icon: "whatsapp", link: "" },
-            { icon: "linkedin", link: "" },
-            { icon: "telephone", link: "" },
-        ]
+        query: ["Une requête ?", "Contactez-moi !"],
     },
-    copy: "Copier"
+    copy: "Copier",
+    error: {
+        emailInvalid: "Email invalide",
+        toLong: 'Information trop longue',
+        toShort: 'Information trop courte'
+    }
 }

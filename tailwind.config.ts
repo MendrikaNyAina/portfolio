@@ -63,6 +63,7 @@ export default {
 		fontFamily:{
 			jost: ['var(--font-jost)', ...fontFamily.sans],
 			'wrestlemania': ['Wrestlemania', ...fontFamily.serif],
+			karantina:['var(--font-karantina)', ...fontFamily.serif],
 		},
 		fontSize:{
 			test:"10rem"

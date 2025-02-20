@@ -20,8 +20,8 @@ body {
     --primary-foreground: #ffffff;
     --secondary: #E8BDF2;
     --secondary-foreground: #ffffff;
-    --muted: #ffffff00;
-    --muted-foreground: #D9E0F2;
+    --muted: #D9E0F2;
+    --muted-foreground: #6E6E6E;
     --accent: #ffffff00;
     --accent-foreground: #056BF1;
     --destructive: #DAA1F2;
@@ -50,8 +50,8 @@ body {
     --primary-foreground: #ffffff;
     --secondary: #897ABF;
     --secondary-foreground: #ffffff;
-    --muted: #ffffff00;
-    --muted-foreground: #130F26;
+    --muted: #D9E0F2;
+    --muted-foreground: #6E6E6E;
     --accent: #ffffff00;
     --accent-foreground: #88DFF2;
     --destructive: #7D458C;

@@ -10,7 +10,7 @@ export default function TypographyH3(props:TypographyH3Props) {
         fg="text-accent-foreground"
     }
     return (
-      <h3 className={"scroll-m-20 text-2xl "+fg+" "+props.className}>
+      <h3 className={"scroll-m-20 text-2xl "+fg+" "+(props.className?props.className:"")}>
         {props.children}
       </h3>
     )

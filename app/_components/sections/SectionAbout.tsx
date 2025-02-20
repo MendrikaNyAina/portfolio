@@ -23,12 +23,12 @@ export const SectionAbout = () => {
                     <span className="block">{desc.lastname} </span>
                     <span className="block">{desc.name} </span>
                 </TypographyH1>
-                <TypographyH2 className="pl-10 pt-16 font-medium leading-[1]">
+                <img src={pic1.src} alt={pic1.alt} className="absolute bottom-[-80px] right-0 h-[350px]" />
+                <TypographyH2 className="relative pl-10 pt-16 font-medium leading-[1]">
                     <span className="block">{desc.jobTitles[0]} </span>
                     <span className="block">{desc.jobTitles[1]} </span>
                 </TypographyH2>
-                <img src={pic1.src} alt={pic1.alt} className="absolute bottom-[-80px] right-0 h-[350px]" />
-
+                
                 <Frame className=" absolute bottom-0 left-0 border-b-8 border-l-8"></Frame>
             </div>
             <div className="relative h-[510px]">

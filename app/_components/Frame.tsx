@@ -8,6 +8,6 @@ import { Props } from "../_interface/BasicProps"
  */
 export const Frame=(props:Props)=>{
     return(
-        <div className={"border-solid border-destructive w-36 h-36 "+props.className}></div>
+        <div className={"border-solid border-destructive w-36 h-36 "+(props.className?props.className:"")}></div>
     )
 }
