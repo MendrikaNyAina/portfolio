@@ -6,6 +6,7 @@ export const frContent = {
     lastname: "Randrianarison",
     jobTitle: "Développeuse fullstack",
     jobTitles: ["Développeuse", "fullstack"],
+    cvPath:"/docs/resume-fr.pdf",
     menuItem: {
         archievement: "Faits marquants",
         contact: "Contacts",
@@ -30,13 +31,21 @@ export const frContent = {
 
     ],
     projectInfo: [
-        { title: "Scaffold", photo: "", definition: "Habitasse urna libero ridiculus eleifend nunc elementum bibendum.Lorem ipsum dolor sit amet consectetur. Sed at eleifend elit lorem lore", how: "Habitasse urna libero ridiculus eleifend nunc elementum bibendum.Lorem ipsum dolor sit amet consectetur. Sed at eleifend elit lorem loreHabitasse urna libero ridiculus eleifend nunc elementum bibendum.Lorem ipsum dolor sit amet consectetur. Sed at eleifend elit lorem lore", githubLink: "test.com link" },
-        { title: "Gestion d'ordinateur", photo: "", definition: "", how: "", githubLink: "" },
+        {
+            title: "Scaffold",
+            photo: "",
+            definition: "Habitasse urna libero ridiculus eleifend nunc elementum bibendum.Lorem ipsum dolor sit amet consectetur. Sed at eleifend elit lorem lore",
+            how: "Habitasse urna libero ridiculus eleifend nunc elementum bibendum.Lorem ipsum dolor sit amet consectetur. Sed at eleifend elit lorem loreHabitasse urna libero ridiculus eleifend nunc elementum bibendum.Lorem ipsum dolor sit amet consectetur. Sed at eleifend elit lorem lore",
+            githubLink: "https://github.com/MendrikaNyAina/my-utils",
+            technologies: ["Java", "Javascript"]
+        },
+        { title: "Gestion d'ordinateur", photo: "", definition: "", how: "", githubLink: "", technologies: ["Java", "Postgresql", "Javascript"] },
     ],
     projectLabel: {
         what: "C'est quoi?",
         how: "Comment c'était fait",
-        githubLink: "Lien github"
+        githubLink: "Lien github",
+        technologies: "Technologies"
     },
     serviceInfo: {
         hardSkill: ["ReactJs", "Java Spring boot", "Angular", "Python", "NodeJs", "Mysql", "Postresql", "Oracle", "Neo4J", "ReactNative", "Php", "Docker"],
@@ -58,10 +67,10 @@ export const frContent = {
         githubLink: "Lien github"
     },
     contactInfo: [
-        { icon: "email", link: "mailto:mendrika.nyainaf@gmail.com" },
-        { icon: "whatsapp", link: "https://wa.me/261342236379" },
-        { icon: "linkedin", link: "www.linkedin.com/in/mendrika-randrianarison-497a87272" },
-        { icon: "phone", link: "tel:+261342236379" },
+        { icon: "email", link: "mailto:mendrika.nyainaf@gmail.com", info:"mendrika.nyainaf@gmail.com" },
+        { icon: "whatsapp", link: "https://wa.me/261342236379",info:"261342236379" },
+        { icon: "linkedin", link: "www.linkedin.com/in/mendrika-randrianarison-497a87272",info:"www.linkedin.com/in/mendrika-randrianarison-497a87272" },
+        { icon: "phone", link: "tel:+261342236379", info:"+261342236379" },
     ]
     ,
     contactLabel: {
@@ -86,10 +95,11 @@ export const frContent = {
         },
         query: ["Une requête ?", "Contactez-moi !"],
     },
-    copy: "Copier",
+    copy: "Copié dans le press papier",
     error: {
         emailInvalid: "Email invalide",
         toLong: 'Information trop longue',
-        toShort: 'Information trop courte'
+        toShort: 'Information trop courte',
+        cantCopy:"L'information n'a pas pu être copier"
     }
 }

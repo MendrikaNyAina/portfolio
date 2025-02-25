@@ -1,17 +1,20 @@
 /* eslint-disable react/react-in-jsx-scope */
 "use client"
-import { content } from "@/app/_contents/content";
+
 import { Badge } from "@/components/ui/badge";
+import { useLanguage } from "@/context/LanguageContext";
 import { Book, BookAudio, BookMarked, BookText } from "lucide-react";
+import { AnimateDiv } from "../AnimateDiv";
 import { SectionWithTitle } from "../SectionWithTitle";
 
 export const SectionFormation = () => {
+    const { content } = useLanguage();
     const desc = content();
     const variantsBadge = ["default", "secondary"]
-    return (<SectionWithTitle title={desc.titleItem.formation} >
+    return (<AnimateDiv><SectionWithTitle title={desc.titleItem.formation} id="sectionFormation">
         <div className={`grid grid-cols-[20%_5%_75%] ${"grid-rows-"+(desc.formationInfo.length+2) } gap-4 p-4`}>
             <div></div>
-            <div className={`relative ${"row-span-"+(desc.formationInfo.length+3) } col-start-2  flex items-center justify-center`}>
+            <div className={`relative ${"row-span-7" } col-start-2  flex items-center justify-center`}>
                 <div className="absolute top-0 h-6 w-6 rounded-full bg-secondary"></div>
                 <div className="h-full w-3 rounded-lg bg-secondary"></div>
                 <div className="absolute bottom-0 h-6 w-6 rounded-full bg-secondary"></div>
@@ -26,7 +29,8 @@ export const SectionFormation = () => {
                 </>
             })}
         </div> 
-    </SectionWithTitle>)
+    </SectionWithTitle>
+    </AnimateDiv>)
 }
 
 function getIconBook(id:number){
@@ -35,3 +39,4 @@ function getIconBook(id:number){
     ]
     return iconBooks[id%4];
 }
+

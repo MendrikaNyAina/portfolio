@@ -8,14 +8,14 @@ body {
 
 @layer base {
   :root {
-    --background:#ffffff00;
-    --background1:#F8F8F8;
-    --background2:#FFFFFF;
+    --background: #ffffff00;
+    --background1: #F8F8F8;
+    --background2: #FFFFFF;
     --foreground: #130F26;
-    --card:  #ffffff00;
+    --card: #ffffff00;
     --card-foreground: #130F26;
     --popover: #ffffff;
-    --popover-foreground:#130F26;
+    --popover-foreground: #130F26;
     --primary: #88DFF2;
     --primary-foreground: #ffffff;
     --secondary: #E8BDF2;
@@ -27,25 +27,31 @@ body {
     --destructive: #DAA1F2;
     --destructive-foreground: #ffffff;
     --border: #ffffff00;
-    --input: #ffffff00;
-    --ring:#ffffff00;
+    --input: #302A58;
+    --ring: #adbadc;
     --chart-1: #88DFF2;
     --chart-2: #E8BDF2;
     --chart-3: #056BF1;
     --chart-4: #DAA1F2;
     --chart-5: #D9E0F2;
     --radius: 0.5rem;
-    --hover:#c1c1c181;
+    --hover: #c1c1c181;
+    --color-1: #056BF1;
+    --color-2:  #88DFF2;
+    --color-3: #D9E0F2;
+    --color-4: #E8BDF2;
+    --color-5: #DAA1F2;
   }
+
   .dark {
     --background: #ffffff00;
     --background1: #130F26;
     --background2: #302A58;
     --foreground: #FFFFFF;
-    --card:  #ffffff00;
+    --card: #ffffff00;
     --card-foreground: #ffffff;
     --popover: #302A58;
-    --popover-foreground:#ffffff;
+    --popover-foreground: #ffffff;
     --primary: #56F2A9;
     --primary-foreground: #ffffff;
     --secondary: #897ABF;
@@ -57,15 +63,20 @@ body {
     --destructive: #7D458C;
     --destructive-foreground: #ffffff;
     --border: #ffffff00;
-    --input: #ffffff00;
-    --ring:#ffffff00;
+    --input: #302A58;
+    --ring: #658df4;
     --chart-1: #56F2A9;
     --chart-2: #897ABF;
     --chart-3: #88DFF2;
     --chart-4: #7D458C;
     --chart-5: #D9E0F2;
     --radius: 0.5rem;
-    --hover:#7b7b7b52;
+    --hover: #7b7b7b52;
+    --color-1: #D9E0F2;
+    --color-2:  #88DFF2;
+    --color-3: #56F2A9;
+    --color-4: #897ABF;
+    --color-5: #7D458C;
   }
 }
 
@@ -77,6 +88,15 @@ body {
     @apply text-foreground;
   }
 }
+/* @layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+} */
 
 @font-face {
   font-family: 'Wrestlemania';
@@ -85,3 +105,4 @@ body {
   font-style: normal;
   font-display: swap;
 }
+

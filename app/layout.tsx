@@ -1,6 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
-import type { Metadata } from "next";
 
+
+import type { Metadata } from "next";
 import { Jost, Karantina } from "next/font/google";
 import { ThemeProvider } from "./_provider/ThemeProvider";
 import "./globals.css";
@@ -29,10 +30,10 @@ export default function RootLayout({
 }>) {
 
   return (
-
     <html lang="en">
       <body className={`${jost.variable} ${karantina.variable}`}>
         <ThemeProvider>
+         
             {children}
         </ThemeProvider>
       </body >

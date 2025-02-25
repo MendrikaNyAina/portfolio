@@ -1,8 +1,10 @@
 /* eslint-disable react/react-in-jsx-scope */
+ 
 "use client"
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
-export const Logo = () => {
+
+export const Logo = ({ ...props}) => {
     const { theme } = useTheme();
 
     const img = theme !== 'dark'
@@ -11,7 +13,7 @@ export const Logo = () => {
     console.log(theme)
     // console.log(mounted)
     return (
-        <Button variant="logo" size="logo">
+        <Button variant="logo" size="logo" {...props}>
             <img src={img.src} alt={img.alt} className="h-13 block" />
         </Button>
     )
