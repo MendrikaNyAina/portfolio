@@ -9,7 +9,7 @@ body {
 @layer base {
   :root {
     --background: #ffffff00;
-    --background1: #F8F8F8;
+    --background1: #f7f4f4;
     --background2: #FFFFFF;
     --foreground: #130F26;
     --card: #ffffff00;
@@ -64,7 +64,7 @@ body {
     --destructive-foreground: #ffffff;
     --border: #ffffff00;
     --input: #302A58;
-    --ring: #658df4;
+    --ring: #ffffff;
     --chart-1: #56F2A9;
     --chart-2: #897ABF;
     --chart-3: #88DFF2;
@@ -105,4 +105,8 @@ body {
   font-style: normal;
   font-display: swap;
 }
+
+
+
+
 

@@ -4,67 +4,69 @@ export const enContent = {
     fullname: "Randrianarison Mendrika",
     name: "Mendrika",
     lastname: "Randrianarison",
-    jobTitle: "Développeuse fullstack",
-    jobTitles: ["Développeuse", "fullstack"],
+    jobTitle: "Fullstack developer",
+    jobTitles: ["Fullstack", "developer"],
     cvPath:"/docs/resume-en.pdf",
     menuItem: {
-        archievement: "Faits marquants",
+        archievement: "Archievements",
         contact: "Contacts",
         experience: "Experiences",
         formation: "Formations",
-        project: "Projets",
-        service: "Mes services"
+        project: "Projects",
+        service: "My services"
     },
     titleItem: {
-        archievement: "Fais marquants",
+        archievement: "Archievements",
         contact: "Contacts",
         experience: "Experiences",
-        formation: "Parcours académiques et formations",
-        project: "Projets personnels",
-        service: "Mes services"
+        formation: "Academic pathways and training",
+        project: "Personal projects",
+        service: "My services"
     },
-    descriptiveText: "Lorem ipsum dolor sit amet consectetur. Sed at eleifend elit lorem lorem eu molestie cursus. Aliquam ullamcorper venenatis quis imperdiet fusce quis pulvinar. Vehicula dignissim elit nec orci fusce vestibulum est. Nisl dictumst congue netus vitae mauris nulla duis enim. Ultrices massa placerat nec risus mauris cursus blandit vitae. Nec ultrices faucibus eu pellentesque arcu vitae eget. Morbi nibh egestas faucibus ipsum tempus. Bibendum vitae arcu nunc nec imperdiet in tellus. Nisl ridiculus vulputate aliquam arcu maecenas adipiscing. Morbi suspendisse turpis convallis et aliquam habitasse convallis lectus. Habitasse urna libero ridiculus eleifend nunc elementum bibendum.",
-    downloadCV: "Télécharger mon cv",
+    descriptiveText: "As a fullstack developer for the last year and a half and a graduate of ITUniversity, I create web solutions tailored to the needs of each project. Passionate about web development, I help my clients to realise their online ideas. I design websites and web applications that meet my clients' expectations, mainly using Java Spring Boot, React.js, Node.js and other technologies.",
+    downloadCV: "Download my CV",
     experienceInfo: [
-        { title: "Ibonia", date: "Août 2023 - maintenant", description: ["Morbi suspendisse turpis convallis et aliquam habitasse convallis lectus. Habitasse urna libero ridiculus eleifend nunc elementum bibendum.", "Lorem ipsum dolor sit amet consectetur. Sed at eleifend elit lorem lorem eu molestie cursus.", "Morbi suspendisse turpis convallis et aliquam habitasse convallis lectus. Habitasse urna libero ridiculus eleifend nunc elementum bibendum.", "Lorem ipsum dolor sit amet consectetur. Sed at eleifend elit lorem lorem eu molestie cursus.", "Morbi suspendisse turpis convallis et aliquam habitasse convallis lectus. Habitasse urna libero ridiculus eleifend nunc elementum bibendum.", "Lorem ipsum dolor sit amet consectetur. Sed at eleifend elit lorem lorem eu molestie cursus."] },
-        { title: "Freelance", date: "Juillet 2024 - Septembre 2024", description: ["Morbi suspendisse turpis convallis et aliquam habitasse convallis lectus. Habitasse urna libero ridiculus eleifend nunc elementum bibendum.", "Lorem ipsum dolor sit amet consectetur. Sed at eleifend elit lorem lorem eu molestie cursus."] },
+        { title: "Ibonia", date: "August 2023 - now", description: ["Design and development of solutions linked to the fintech and catering sectors", "Development of a core banking system tool for developers in Spring boot, ReactJs and Mysql", "Development and maintenance of a money distribution platform, processing bank files, which has helped to increase the number and types of transfers processed by bank branches, in PHP codeIgniter, Java Spring Boot and Mysql", "Development of a tool in Java Spring boot and Nodejs that facilitates development (SpringBoot, Nextjs, Mysql) by automating code generation and offering an efficient work structure." ,"Development of a Java Spring boot and Nodejs tool that facilitates development (SpringBoot, Nextjs, Mysql) by automating code generation and providing an efficient working structure.", "Development of booking and ordering software in the restaurant industry, supporting the maintenance and enhancement of the payment module, including Stripe integration for a smooth and secure transaction experience, as well as delivery, in PHP Symfony, NodeJs and Neo4J."] },
+        { title: "Freelance", date: "July 2024 - September 2024", description: ["Development from a to z of an interactive training platform with quizzes, tests, documentations and summaries for users, integrating a fun dimension thanks to a gamified approach, all produced with Java Spring Boot and React."] },
 
     ],
     projectInfo: [
         { 
             title: "Scaffold", 
-            photo: "", 
-            definition: "Habitasse urna libero ridiculus eleifend nunc elementum bibendum.Lorem ipsum dolor sit amet consectetur. Sed at eleifend elit lorem lore", 
-            how: "Habitasse urna libero ridiculus eleifend nunc elementum bibendum.Lorem ipsum dolor sit amet consectetur. Sed at eleifend elit lorem loreHabitasse urna libero ridiculus eleifend nunc elementum bibendum.Lorem ipsum dolor sit amet consectetur. Sed at eleifend elit lorem lore", 
-            githubLink: "test.com link",
-            technologies:["Java", "Javascript"]
+            definition: "A Java Spring boot tool that facilitates the development of a complete web project in Spring mvc by automating code generation with tags and a common code base and by offering an efficient work structure.", 
+            how: "Front-end code generation using components created using tags, development and generation of a common code base facilitating basic CRUD and search operations.", 
+            githubLink: "https://github.com/MendrikaNyAina/my-utils",
+            technologies:["Java Spring boot", "Javascript"]
         },
-        { title: "Gestion d'ordinateur", photo: "", definition: "", how: "", githubLink: "", technologies:["Java", "Postgresql", "Javascript"] },
+        { title: "Computer management", definition: "Web platform for managing the stock and sales of a computer shop with several points of sale", how: "Development of modules linked to stock management, sales, invoicing and financial processing of income, taking into account the multiple dimensions of the different points of sale.", githubLink: "https://github.com/MendrikaNyAina/gestion_ordinateur", technologies:["Java Spring boot", "Postgresql", "Javascript"]},
     ],
     projectLabel: {
-        what: "C'est quoi?",
-        how: "Comment c'était fait",
-        githubLink: "Lien github",
+        what: "What is it?",
+        how: "How was it done?",
+        githubLink: "Github link",
         technologies:"Technologies"
     },
     serviceInfo: {
-        hardSkill: ["ReactJs", "Java Spring boot", "Angular", "Python", "NodeJs", "Mysql", "Postresql", "Oracle", "Neo4J", "ReactNative", "Php", "Docker"],
-        softSkill: ["Agil/Scrum", "Ecoute native", "Compréhension des besoins", "Esprit d'équipe", "Rédaction claire", "Adaptabilité", "Résoolution de problèmes", "Gestion du temps"]
+        hardSkill:  ["Java Spring boot","Spring mvc", "ReactJs", "Angular", "NodeJs", "Python", "ReactNative","Php", "Mysql", "Postresql", "Oracle", "Neo4J",  "Docker"],
+        softSkill: ["Agil/Scrum", "Native listening", "Understanding needs", "Team spirit", "Clear writing", "Adaptability", "Problem solving", "Time management"]
     },
     formationInfo: [
-        { date: "20 janvier 2025", icon: "", title: "Formation 1", description: "Habitasse urna libero ridiculus eleifend nunc " },
-        { date: "20 janvier 2025", icon: "", title: "Formation 1", description: "Habitasse urna libero ridiculus eleifend nunc " },
-        { date: "20 janvier 2025", icon: "", title: "Formation 1", description: "Habitasse urna libero ridiculus eleifend nunc " },
-        { date: "20 janvier 2025", icon: "", title: "Formation 1", description: "Habitasse urna libero ridiculus eleifend nunc " },
+        { date: "2024", title: "Master 1", description: "Master 1 in computer science at ITUniversity." },
+        { date: "All of 2024", title: "Video games training", description: "At Ony House, learn about the Unreal Engine, video game design and development" },
+        { date: "2020 - 2023", title: "License", description: "Bachelor's degree in development from ITUniversity, honorable distinction." },     
+        { date: "February 2025", title: "Advanced Redux", description: "at ESTI" },
+        { date: "November 2024", title: "Artificial intelligence and machine learning", description: "at Arkeup Academy" },
+        { date: "August 2024", title: "Design thinking", description: "at CCFIM" },
+        { date: "June 2024", title: "Agil/Scrum", description: "at CCFIM" },
+
+        { date: "2022", title: "Intermediate English", description: "English tutoring madagascar" },
     ],
     archievementInfo: [
-        { title: "Hackathon zahgeek", date: "20 Juillet 2023", description: "Une plateforme e-commerce avec intégration 3D", technologies: ["Ruby", "Angular", "freeJs"] },
-        { title: "GamJam 2022", date: "12 Juin 2022", description: "Jeu kapoaka", technologies: ["Godot"] },
+        { title: "Hackathon zahgeek", date: "July 2023", description: "Première place, development of an e-commerce platform for the sale of goodies with 3D integration", technologies: ["Ruby", "Angular", "freeJs"] },
+        { title: "GamJam 2022", date: "2022", description: "Development of a game called 'Kapoaka' with multiplayer integration", technologies: ["Godot"] },
     ],
     archievementLabel: {
-        about: "A propos",
-        technology: "Comment c'était fait",
-        githubLink: "Lien github"
+        about: "About"
     },
     contactInfo: [
         { icon: "email", link: "mailto:mendrika.nyainaf@gmail.com", info:"mendrika.nyainaf@gmail.com" },
@@ -76,30 +78,30 @@ export const enContent = {
     contactLabel: {
         form: {
             name: {
-                text: "Nom",
-                placeholder: "Nom"
+                text: "Name",
+                placeholder: "Name"
             },
             email: {
                 text: "Email",
                 placeholder: "Email"
             },
             object: {
-                text: "Objet",
-                placeholder: "Object"
+                text: "Subject",
+                placeholder: "Subject"
             },
             message: {
                 text: "Message",
                 placeholder: "Message"
             },
-            button: "Contacter"
+            button: "Contact"
         },
-        query: ["Une requête ?", "Contactez-moi !"],
+        query: ["Do you have a request ?", "Contact me !"],
     },
-    copy: "Copier",
+    copy: "Copied to the paper press",
     error: {
-        emailInvalid: "Email invalide",
-        toLong: 'Information trop longue',
-        toShort: 'Information trop courte',
-        cantCopy:"L'information n'a pas pu être copier"
+        emailInvalid: "Invalid email",
+        toLong: 'Information too long',
+        toShort: 'Information too short',
+        cantCopy:"The information could not be copied"
     }
 }

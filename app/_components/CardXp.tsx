@@ -26,7 +26,7 @@ export const CardXp = (props: CardXpProps) => {
             </div>
             <ul className="list-disc text-sm">
                 {props.content.description.map((txt, cle) => {
-                    return (<li key={cle}>{txt} </li>);
+                    return (<li key={cle}>&nbsp;&nbsp;&nbsp; - &nbsp;{txt} </li>);
                 })}
             </ul>
             {props.children}

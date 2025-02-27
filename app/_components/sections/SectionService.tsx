@@ -12,8 +12,8 @@ export const SectionService = () => {
     // const variants = ["default", "secondary", "lime", "amber"]
     const desc = content();
     return (<AnimateDiv><SectionWithTitle title={desc.titleItem.service} id="sectionService">
-        <div className="grid grid-cols-2 grid-rows-1 text-center">
-            <div className="rounded-lg border-r-8 border-solid border-secondary p-4 ">
+        <div className="grid grid-cols-1 text-center  md:grid-cols-2">
+            <div className="rounded-lg p-4 md:border-r-8 md:border-solid md:border-secondary ">
                 <TypographyH3 variant="accent">Hard Skills</TypographyH3>
                 <br />
                 {desc.serviceInfo.hardSkill.map((elt, key) => {

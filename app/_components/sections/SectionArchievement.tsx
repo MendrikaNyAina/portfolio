@@ -11,7 +11,7 @@ export const SectionArchievement = () => {
     return (
         <AnimateDiv>
             <SectionWithTitle title={desc.titleItem.archievement} id="sectionArchievement" >
-                <div className={"mb-10 grid  grid-cols-2 gap-4"}>
+                <div className={" grid grid-cols-1 gap-4 md:grid-cols-2"}>
                     {desc.archievementInfo.map((elt, key) => {
                         return (<CardArchievement content={elt} key={key}></CardArchievement>)
                     })}

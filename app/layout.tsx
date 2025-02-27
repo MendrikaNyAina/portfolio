@@ -20,7 +20,7 @@ const karantina = Karantina({
 })
 export const metadata: Metadata = {
   title: "Randrianarison Mendrika - Developer fullstack",
-  description: "Java, react, typescript, sql, neo4J",
+  description: "Java, react, typescript, sql, neo4J"
 };
 
 export default function RootLayout({

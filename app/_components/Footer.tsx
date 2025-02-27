@@ -22,7 +22,7 @@ export const Footer = () => {
         }
         
     }
-    return <section className="relative flex w-full  items-center justify-between px-28 py-10 text-sm text-accent-foreground">
+    return <section className="relative m-auto flex w-full max-w-[1400px] items-center justify-between px-8 py-10 text-sm text-accent-foreground ">
         <div className="absolute right-0" ><Toaster /></div> 
         <p>Copyright 2025</p>
         <div className=" flex items-center gap-2 ">

@@ -26,7 +26,7 @@ export const useLanguage = () => {
 // LanguageProvider pour gérer l'état de la langue
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   // Définir l'état de la langue (par défaut : anglais)
-  const [language, setLanguage] = useState<'en' | 'fr'>('en');
+  const [language, setLanguage] = useState<'en' | 'fr'>('fr');
 
   // Fonction pour basculer entre anglais et français
   const toggleLanguage = () => {

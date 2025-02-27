@@ -13,6 +13,9 @@ import { useLanguage } from "@/context/LanguageContext";
 import Link from "next/link";
 import { useState } from "react";
 
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { AlignJustify } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { ThemeToggle } from "./ThemeToggle";
 
 
@@ -20,6 +23,10 @@ export const Header = () => {
     const [activeLink, setActiveLink] = useState("");
     const { content, toggleLanguage } = useLanguage();
     const desc = content();
+
+    //navigation mobile
+    const [isOpen, setIsOpen] = useState(false);
+    const router = useRouter();
 
     return (
         <header className="fixed left-0 top-0 z-20 m-auto flex w-full items-center justify-between px-4 backdrop-blur-md">
@@ -34,7 +41,7 @@ export const Header = () => {
                 </div>
             </div>
             <NavigationMenu>
-                <NavigationMenuList className="gap-x-10 px-6 text-sm text-primary">
+                <NavigationMenuList className="hidden gap-x-10 px-6 text-sm text-primary lg:flex">
                     <NavigationMenuItem>
                         <NavigationMenuLink href={"#sectionExperience"} className={"hover:underline " + (activeLink == "#sectionExperience" ? "text-secondary" : "")} onClick={(e) => setActiveLink("#sectionExperience")}>{desc.menuItem.experience}</NavigationMenuLink>
                     </NavigationMenuItem>
@@ -56,9 +63,75 @@ export const Header = () => {
                     </NavigationMenuItem>
 
                 </NavigationMenuList>
+
                 <NavigationMenuList>
+
                     <Button size="icon" variant="logo" className="text-base text-destructive" onClick={toggleLanguage}>{desc.lang} </Button>
                     <ThemeToggle></ThemeToggle>
+
+                    {/* version mobile */}
+                    <div className="lg:hidden">
+                        <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
+                            <DropdownMenuTrigger asChild>
+                                <Button size="icon" variant="logo" className="text-base text-destructive">
+                                    <AlignJustify></AlignJustify>
+                                </Button>
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent className="group border-none text-primary">
+                                <DropdownMenuItem className="hover:underline active:text-accent-foreground"
+                                    onClick={() => {
+                                        setIsOpen(false);
+                                        router.push("#sectionExperience");
+                                    }}>
+
+                                    {desc.menuItem.experience}
+                                </DropdownMenuItem>
+
+                                <DropdownMenuItem className="hover:underline active:text-accent-foreground"
+                                    onClick={() => {
+                                        setIsOpen(false);
+                                        router.push("#sectionProject");
+                                    }}>
+
+                                    {desc.menuItem.project}
+                                </DropdownMenuItem>
+                                <DropdownMenuItem className="hover:underline active:text-accent-foreground"
+                                    onClick={() => {
+                                        setIsOpen(false);
+                                        router.push("#sectionService");
+                                    }}>
+
+                                    {desc.menuItem.service}
+                                </DropdownMenuItem>
+                                <DropdownMenuItem className="hover:underline active:text-accent-foreground"
+                                    onClick={() => {
+                                        setIsOpen(false);
+                                        router.push("#sectionFormation");
+                                    }}>
+
+                                    {desc.menuItem.formation}
+                                </DropdownMenuItem>
+                                <DropdownMenuItem className="hover:underline active:text-accent-foreground"
+                                    onClick={() => {
+                                        setIsOpen(false);
+                                        router.push("#sectionArchievement");
+                                    }}>
+
+                                    {desc.menuItem.archievement}
+                                </DropdownMenuItem>
+                                
+                                <DropdownMenuItem className="hover:underline active:text-accent-foreground"
+                                    onClick={() => {
+                                        setIsOpen(false);
+                                        router.push("#sectionContact");
+                                    }}>
+
+                                    {desc.menuItem.contact}
+                                </DropdownMenuItem>
+                                
+                            </DropdownMenuContent>
+                        </DropdownMenu>
+                    </div>
                 </NavigationMenuList>
 
             </NavigationMenu>

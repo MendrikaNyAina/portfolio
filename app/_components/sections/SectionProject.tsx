@@ -10,7 +10,7 @@ export const SectionProject = () => {
     return (
         <AnimateDiv>
             <SectionWithTitle title={desc.titleItem.project} id="sectionProject">
-                <div className={"mb-10 grid  grid-cols-2 gap-4"}>
+                <div className={"grid grid-cols-1 gap-4 md:grid-cols-2"}>
                     {desc.projectInfo.map((elt, key) => {
                         return <CardProject key={key} content={elt}></CardProject>
                     })}
