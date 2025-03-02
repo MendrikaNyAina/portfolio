@@ -68,7 +68,7 @@ export const frContent = {
         { date: "2022", title: "Anglais intermédiaire", description: "English tutoring madagascar" },
     ],
     archievementInfo: [
-        { title: "Hackathon zahgeek", date: "Juillet 2023", description: "Première place, développement d'une plateforme e-commerce de vente de goodies avec intégration 3D", technologies: ["Ruby", "Angular", "freeJs"] },
+        { title: "Hackathon zahgeek", date: "Juillet 2023", description: "Première place, développement d'une plateforme e-commerce de vente de goodies avec intégration 3D.", technologies: ["Ruby", "Angular", "freeJs"] },
         { title: "GamJam 2022", date: "2022", description: "Développement d'un jeu nommé 'Kapoaka' avec l'intégration du multijoueur", technologies: ["Godot"] },
     ],
     archievementLabel: {
