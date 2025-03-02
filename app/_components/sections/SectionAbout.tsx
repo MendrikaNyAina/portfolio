@@ -46,7 +46,6 @@ export const SectionAbout = () => {
                     <div className=" flex justify-end pr-7">
                         <div className="relative rounded-lg border-4 border-solid border-primary p-2">
                             <Button variant="secondary" onClick={handleDownload}>{desc.downloadCV} </Button>
-                            {/* <RainbowButton>{desc.downloadCV}</RainbowButton> */}
                             <MousePointer2 className="absolute bottom-0 right-0 fill-background2 text-accent-foreground"></MousePointer2>
                         </div>
                     </div>

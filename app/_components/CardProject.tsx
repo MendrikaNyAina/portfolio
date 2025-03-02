@@ -10,7 +10,6 @@ import TypographyH3 from "./TypographyH3";
 type CardProjectProps = {
     content: {
         title: string;
-        photo: string;
         definition: string;
         how: string;
         githubLink: string;

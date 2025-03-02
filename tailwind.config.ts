@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
+import tailwindAnimate from "tailwindcss-animate";
 const { fontFamily } = require('tailwindcss/defaultTheme');
-
+// import recommendedPreset from "tailwindcss/recommended";
 export default {
 	darkMode: ["class"], //quand je met cette classe sur un élement, le mode dark va être activé
 	content: [
@@ -97,5 +98,6 @@ export default {
 			},
 		}
 	},
-	plugins: ["tailwindcss-animate", "tailwindcss/recommended"],
+	plugins: [tailwindAnimate],
+	// presets:[recommendedPreset]
 } satisfies Config;

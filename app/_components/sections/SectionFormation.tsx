@@ -10,7 +10,7 @@ import { SectionWithTitle } from "../SectionWithTitle";
 export const SectionFormation = () => {
     const { content } = useLanguage();
     const desc = content();
-    const variantsBadge = ["default", "secondary"]
+    const variantsBadge: Array<"default"|"secondary">= ["default", "secondary"]
     return (<AnimateDiv><SectionWithTitle title={desc.titleItem.formation} id="sectionFormation">
         <div className={`grid grid-cols-1 lg:grid-cols-[20%_5%_75%] ${"grid-rows-"+(desc.formationInfo.length+2) } gap-4 p-4`}>
             <div className="hidden lg:block"></div>

@@ -8,7 +8,7 @@ type TechnologyBadgeProps={
     text:string
 } & Props
 export const TechnologyBadge=(props:TechnologyBadgeProps)=>{
-    const variants = ["default", "secondary", "lime", "amber"];
+    const variants:Array<"default" | "secondary" | "lime" | "amber"> = ["default", "secondary", "lime", "amber"];
     return (<Badge form="rounded" variant={variants[props.num % 4]} className={"mb-2 mr-2 text-base "+(props.className?props.className:"")}>{BadgeIcon(props.num)}{props.text} </Badge>)
     
 }
