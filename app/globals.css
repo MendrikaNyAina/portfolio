@@ -100,7 +100,7 @@ body {
 
 @font-face {
   font-family: 'Wrestlemania';
-  src: url('/fonts/WRESTLEMANIA.ttf') format('ttf');
+  src: url('/fonts/WRESTLEMANIA.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
