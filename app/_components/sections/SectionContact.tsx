@@ -16,7 +16,7 @@ import { useTheme } from "next-themes";
 import { AnimateDiv } from "../AnimateDiv";
 
 const emailKey = process.env.NEXT_PUBLIC_WEB3FORM_KEY;
-console.log("émailKey", emailKey)
+// console.log("emailKey", emailKey)
 export const SectionContact = () => {
     const { content } = useLanguage();
     const desc = content();
@@ -53,7 +53,7 @@ export const SectionContact = () => {
     // 2. Define a submit handler.
     async function onSubmit(values: z.infer<typeof formSchema>) {
         // todo
-        console.log(values)
+        // console.log(values)
 
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
@@ -71,7 +71,7 @@ export const SectionContact = () => {
         });
         const result = await response.json();
         if (result.success) {
-            console.log(result);
+            // console.log(result);
             reset();
         }
     }
