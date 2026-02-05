@@ -18,7 +18,7 @@ export const Footer = () => {
             await navigator.clipboard.writeText(text);
             toast(desc.copy)
         }catch(err){
-            // console.log(err)
+            console.log(err)
             toast(desc.error.cantCopy)
         }
         
