@@ -8,11 +8,12 @@ import { Frame } from "../Frame";
 import { Section } from "../Section";
 import TypographyH1 from "../TypographyH1";
 import TypographyH2 from "../TypographyH2";
+import { expCalculator } from "@/lib/exp_calculator";
 
 export const SectionAbout = () => {
     const { theme } = useTheme();
     const { content } = useLanguage();
-
+    const yearXp=expCalculator();
     const pic1 = theme !== 'dark'
         ? { src: "/img/picprofil1_light.png", alt: "Pic1 light" }
         : { src: "/img/picprofil1_dark.png", alt: "Pic1 dark" };
@@ -29,10 +30,11 @@ export const SectionAbout = () => {
                 <div className="relative min-h-[400px] md:min-h-[510px]" >
                     <Frame className=" absolute right-0 top-0  border-r-8 border-t-8 lg:hidden"></Frame>
                     <TypographyH1 className="pl-10 pt-10 leading-[0.65]">
-                        <span className="block">{desc.lastname} </span>
                         <span className="block">{desc.name} </span>
+                        <span className="block">{desc.lastname} </span>
                     </TypographyH1>
-                    <img src={pic1.src} alt={pic1.alt} className="absolute bottom-0  right-0 h-[250px] md:h-[350px] lg:bottom-[-80px]" />
+                    {/* <img src={pic1.src} alt={pic1.alt} className="absolute bottom-0  right-0 h-[250px] md:h-[350px] lg:bottom-[-80px]" /> */}
+                    
                     <TypographyH2 className="relative pl-10 pt-10 font-medium leading-[1] lg:pt-16">
                         <span className="block">{desc.jobTitles[0]} </span>
                         <span className="block">{desc.jobTitles[1]} </span>
@@ -42,7 +44,7 @@ export const SectionAbout = () => {
                 </div>
                 <div className="relative lg:min-h-[510px]">
                     <Frame className=" absolute right-0 top-0  border-r-8 border-t-8 opacity-0 lg:opacity-100"></Frame>
-                    <p className="p-7 pt-10">{desc.descriptiveText} </p>
+                    <p className="p-7 pt-10">{desc.descriptiveText.replace("{yearXp}", yearXp.toString())} </p>
                     <div className=" flex justify-end pr-7">
                         <div className="relative rounded-lg border-4 border-solid border-primary p-2">
                             <Button variant="secondary" onClick={handleDownload}>{desc.downloadCV} </Button>

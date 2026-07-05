@@ -21,10 +21,10 @@ export const SectionExperience = () => {
         <AnimateDiv>
             <SectionWithTitle title={desc.titleItem.experience} id="sectionExperience">
                 <div className={`grid auto-rows-auto grid-cols-[5%_95%] gap-4 p-4 md:grid-cols-[45%_10%_45%]`}>
-                    <div key="lambda" className="hidden items-start justify-end md:flex">
+                    {/* <div key="lambda" className="hidden items-start justify-end md:flex">
                         <img src={pic2.src} alt={pic2.alt} className="max-w-[400px] place-self-end" />
-                    </div>
-                    <div className={`relative col-start-1 md:col-start-2 ${"row-span-2"} flex items-center justify-center`}>
+                    </div> */}
+                    <div className={`relative col-start-1 md:col-start-2 ${"row-span-3"} flex items-center justify-center`}>
                         <div className="absolute top-0 h-6 w-6 rounded-full bg-secondary"></div>
                         <div className="h-full w-3 rounded-lg bg-secondary"></div>
                         <div className="absolute bottom-0 h-6 w-6 rounded-full bg-secondary"></div>
@@ -34,7 +34,9 @@ export const SectionExperience = () => {
                     <CardXp content={desc.experienceInfo[0]} className="self-start"></CardXp>
 
                     <CardXp content={desc.experienceInfo[1]}></CardXp>
-                    <div className="hidden items-center justify-center md:flex "><PawPrint size={100} className="text-accent-foreground"></PawPrint></div>
+                    <div></div><div></div>
+                    <CardXp content={desc.experienceInfo[2]}></CardXp>
+                    {/* <div className="hidden items-center justify-center md:flex "><PawPrint size={100} className="text-accent-foreground"></PawPrint></div> */}
 
                     {/* {desc.experienceInfo.map((elt, key) => {
                 if (key == 0) {

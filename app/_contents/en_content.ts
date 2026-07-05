@@ -6,7 +6,7 @@ export const enContent = {
     lastname: "Randrianarison",
     jobTitle: "Fullstack developer",
     jobTitles: ["Fullstack", "developer"],
-    cvPath:"/docs/resume-en.pdf",
+    cvPath: "/docs/resume-en.pdf",
     menuItem: {
         archievement: "Archievements",
         contact: "Contacts",
@@ -23,37 +23,40 @@ export const enContent = {
         project: "Personal projects",
         service: "My services"
     },
-    descriptiveText: "As a fullstack developer for the 2 last year and a half and a graduate of ITUniversity, I create web solutions tailored to the needs of each project. Passionate about web development, I help my clients to realise their online ideas. I design websites and web applications that meet my clients' expectations, mainly using Java Spring Boot, React.js, Node.js and other technologies.",
+    descriptiveText: "As a fullstack developer for the {yearXp} last year and a half and a graduate of ITUniversity, I create web solutions tailored to the needs of each project. Passionate about web development, I help my clients to realise their online ideas. I design websites and web applications that meet my clients' expectations, mainly using Java Spring Boot, React.js, Node.js and other technologies.",
     downloadCV: "Download my CV",
     experienceInfo: [
-        { title: "Ibonia", date: "August 2023 - now", description: ["Design and development of solutions linked to the fintech and catering sectors", "Development of a core banking system tool for developers in Spring boot, ReactJs and Mysql", "Development and maintenance of a money distribution platform, processing bank files, which has helped to increase the number and types of transfers processed by bank branches, in PHP codeIgniter, Java Spring Boot and Mysql", "Development of a tool in Java Spring boot and Nodejs that facilitates development (SpringBoot, Nextjs, Mysql) by automating code generation and offering an efficient work structure." ,"Development of a Java Spring boot and Nodejs tool that facilitates development (SpringBoot, Nextjs, Mysql) by automating code generation and providing an efficient working structure.", "Development of booking and ordering software in the restaurant industry, supporting the maintenance and enhancement of the payment module, including Stripe integration for a smooth and secure transaction experience, as well as delivery, in PHP Symfony, NodeJs and Neo4J.","Complete development of a membership management application, using Spring Boot and NextJS, with chatbot n8n integration", "Participation in the development of a website managing races using Spring Boot and NextJS"] },
+        { title: "Ibonia", date: "August 2023 - now", description: ["Design and development of solutions linked to the fintech and catering sectors", "Development of a core banking system tool for developers in Spring boot, ReactJs and Mysql", "Development and maintenance of a money distribution platform, processing bank files, which has helped to increase the number and types of transfers processed by bank branches, in PHP codeIgniter, Java Spring Boot and Mysql", "Development of a tool in Java Spring boot and Nodejs that facilitates development (SpringBoot, Nextjs, Mysql) by automating code generation and offering an efficient work structure.", "Development of a Java Spring boot and Nodejs tool that facilitates development (SpringBoot, Nextjs, Mysql) by automating code generation and providing an efficient working structure.", "Development of booking and ordering software in the restaurant industry, supporting the maintenance and enhancement of the payment module, including Stripe integration for a smooth and secure transaction experience, as well as delivery, in PHP Symfony, NodeJs and Neo4J.", "Complete development of a membership management application, using Spring Boot and NextJS, Mysql, with chatbot n8n integration", "Participation in the development of a website managing races using Spring Boot and NextJS, Mysql"] },
+        {
+            title: "Freelance", date: "November 2025", description: ["Automation of a content creation system thanks to ia and n8n, on Wordpress and Shopify"]
+        },
         { title: "Freelance", date: "July 2024 - September 2024", description: ["Development from a to z of an interactive training platform with quizzes, tests, documentations and summaries for users, integrating a fun dimension thanks to a gamified approach, all produced with Java Spring Boot and React."] },
 
     ],
     projectInfo: [
-        { 
-            title: "Scaffold", 
-            definition: "A Java Spring boot tool that facilitates the development of a complete web project in Spring mvc by automating code generation with tags and a common code base and by offering an efficient work structure.", 
-            how: "Front-end code generation using components created using tags, development and generation of a common code base facilitating basic CRUD and search operations.", 
+        {
+            title: "Scaffold",
+            definition: "A Java Spring boot tool that facilitates the development of a complete web project in Spring mvc by automating code generation with tags and a common code base and by offering an efficient work structure.",
+            how: "Front-end code generation using components created using tags, development and generation of a common code base facilitating basic CRUD and search operations.",
             githubLink: "https://github.com/MendrikaNyAina/my-utils",
-            technologies:["Java Spring boot", "Javascript"]
+            technologies: ["Java Spring boot", "Javascript"]
         },
-        { title: "Computer management", definition: "Web platform for managing the stock and sales of a computer shop with several points of sale", how: "Development of modules linked to stock management, sales, invoicing and financial processing of income, taking into account the multiple dimensions of the different points of sale.", githubLink: "https://github.com/MendrikaNyAina/gestion_ordinateur", technologies:["Java Spring boot", "Postgresql", "Javascript"]},
+        { title: "Computer management", definition: "Web platform for managing the stock and sales of a computer shop with several points of sale", how: "Development of modules linked to stock management, sales, invoicing and financial processing of income, taking into account the multiple dimensions of the different points of sale.", githubLink: "https://github.com/MendrikaNyAina/gestion_ordinateur", technologies: ["Java Spring boot", "Postgresql", "Javascript"] },
     ],
     projectLabel: {
         what: "What is it?",
         how: "How was it done?",
         githubLink: "Github link",
-        technologies:"Technologies"
+        technologies: "Technologies"
     },
     serviceInfo: {
-        hardSkill:  ["Java Spring boot","Spring mvc", "ReactJs", "Angular", "NodeJs", "Python", "ReactNative","Php", "Mysql", "Postresql", "Oracle", "Neo4J", "n8n", "Docker"],
-        softSkill: ["Agil/Scrum", "Native listening", "Understanding needs", "Team spirit", "Clear writing", "Adaptability", "Problem solving", "Time management"]
+        hardSkill: ["Java Spring boot", "Spring mvc", "ReactJs", "Angular", "NodeJs", "Python", "ReactNative", "Php", "Mysql", "Postresql", "Oracle", "Neo4J", "n8n", "Docker"],
+        softSkill: ["Agil/Scrum", "Native listening", "Understanding needs", "Team spirit","Adaptability", "Problem solving", "Time management"]
     },
     formationInfo: [
         { date: "2024", title: "Master 1", description: "Master 1 in computer science at ITUniversity." },
         { date: "All of 2024", title: "Video games training", description: "At Ony House, learn about the Unreal Engine, video game design and development" },
-        { date: "2020 - 2023", title: "License", description: "Bachelor's degree in development from ITUniversity, honorable distinction." },     
+        { date: "2020 - 2023", title: "License", description: "Bachelor's degree in development from ITUniversity, honorable distinction." },
         { date: "February 2025", title: "Advanced Redux", description: "at ESTI" },
         { date: "November 2024", title: "Artificial intelligence and machine learning", description: "at Arkeup Academy" },
         { date: "August 2024", title: "Design thinking", description: "at CCFIM" },
@@ -69,10 +72,10 @@ export const enContent = {
         about: "About"
     },
     contactInfo: [
-        { icon: "email", link: "mailto:mendrika.nyainaf@gmail.com", info:"mendrika.nyainaf@gmail.com" },
-        { icon: "whatsapp", link: "https://wa.me/261342236379",info:"261342236379" },
-        { icon: "linkedin", link: "www.linkedin.com/in/mendrika-randrianarison-497a87272",info:"www.linkedin.com/in/mendrika-randrianarison-497a87272" },
-        { icon: "phone", link: "tel:+261342236379", info:"+261342236379" },
+        { icon: "email", link: "mailto:mendrika.nyainaf@gmail.com", info: "mendrika.nyainaf@gmail.com" },
+        { icon: "whatsapp", link: "https://wa.me/261342236379", info: "261342236379" },
+        { icon: "linkedin", link: "www.linkedin.com/in/mendrika-randrianarison-497a87272", info: "www.linkedin.com/in/mendrika-randrianarison-497a87272" },
+        { icon: "phone", link: "tel:+261342236379", info: "+261342236379" },
     ]
     ,
     contactLabel: {
@@ -102,6 +105,6 @@ export const enContent = {
         emailInvalid: "Invalid email",
         toLong: 'Information too long',
         toShort: 'Information too short',
-        cantCopy:"The information could not be copied"
+        cantCopy: "The information could not be copied"
     }
 }

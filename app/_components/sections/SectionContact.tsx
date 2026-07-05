@@ -155,8 +155,8 @@ export const SectionContact = () => {
                         <Frame className=" absolute bottom-0 left-0 border-b-8 border-l-8 opacity-100 md:opacity-0"></Frame>
 
                         <div className="relative p-10">
-                            <img src={pic1.src} alt={pic1.alt} className="absolute bottom-0 right-0 h-[250px] opacity-0 lg:opacity-80" />
-                            <img src={pic2.src} alt={pic2.alt} className="absolute bottom-0 right-0 h-[250px] opacity-70 lg:opacity-0" />
+                            {/* <img src={pic1.src} alt={pic1.alt} className="absolute bottom-0 right-0 h-[250px] opacity-0 lg:opacity-80" />
+                            <img src={pic2.src} alt={pic2.alt} className="absolute bottom-0 right-0 h-[250px] opacity-70 lg:opacity-0" /> */}
 
                             <div className="relative flex w-fit flex-col bg-[linear-gradient(135deg,var(--accent-foreground)_20%,var(--primary)_40%,var(--destructive)_67%,var(--secondary)_100%)] bg-clip-text font-karantina text-7xl text-transparent md:text-8xl" >
                                 <span className="w-fit">{desc.contactLabel.query[0]}</span>
