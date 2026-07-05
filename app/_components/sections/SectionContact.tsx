@@ -23,12 +23,12 @@ export const SectionContact = () => {
     const { theme } = useTheme();
 
     const suffixe = theme !== 'dark' ? 'light' : 'dark';
-    const pic1 = theme !== 'dark'
-        ? { src: "/img/picprofil1_light.png", alt: "Pic1 light" }
-        : { src: "/img/picprofil1_dark.png", alt: "Pic1 dark" };
-    const pic2 = theme !== 'dark'
-        ? { src: "/img/picprofil2_light.png", alt: "Pic2 light" }
-        : { src: "/img/picprofil2_dark.png", alt: "Pic2 dark" };
+    // const pic1 = theme !== 'dark'
+    //     ? { src: "/img/picprofil1_light.png", alt: "Pic1 light" }
+    //     : { src: "/img/picprofil1_dark.png", alt: "Pic1 dark" };
+    // const pic2 = theme !== 'dark'
+    //     ? { src: "/img/picprofil2_light.png", alt: "Pic2 light" }
+    //     : { src: "/img/picprofil2_dark.png", alt: "Pic2 dark" };
     //définition du schéma du formulaire de contact
     const formSchema = z.object({
         name: z.string().min(3, { message: desc.error.toShort }).max(255, { message: desc.error.toLong }),

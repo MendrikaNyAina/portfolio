@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/context/LanguageContext";
 import { MousePointer2 } from "lucide-react";
-import { useTheme } from "next-themes";
+// import { useTheme } from "next-themes";
 import { AnimateDiv } from "../AnimateDiv";
 import { Frame } from "../Frame";
 import { Section } from "../Section";
@@ -11,12 +11,12 @@ import TypographyH2 from "../TypographyH2";
 import { expCalculator } from "@/lib/exp_calculator";
 
 export const SectionAbout = () => {
-    const { theme } = useTheme();
+    // const { theme } = useTheme();
     const { content } = useLanguage();
     const yearXp=expCalculator();
-    const pic1 = theme !== 'dark'
-        ? { src: "/img/picprofil1_light.png", alt: "Pic1 light" }
-        : { src: "/img/picprofil1_dark.png", alt: "Pic1 dark" };
+    // const pic1 = theme !== 'dark'
+    //     ? { src: "/img/picprofil1_light.png", alt: "Pic1 light" }
+    //     : { src: "/img/picprofil1_dark.png", alt: "Pic1 dark" };
 
     const desc = content();
 

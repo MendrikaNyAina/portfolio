@@ -1,6 +1,6 @@
 "use client"
-import { PawPrint } from "lucide-react";
-import { useTheme } from "next-themes";
+// import { PawPrint } from "lucide-react";
+// import { useTheme } from "next-themes";
 
 import { useLanguage } from "@/context/LanguageContext";
 import { AnimateDiv } from "../AnimateDiv";
@@ -9,11 +9,11 @@ import { SectionWithTitle } from "../SectionWithTitle";
 /* eslint-disable react/react-in-jsx-scope */
 export const SectionExperience = () => {
     const { content } = useLanguage();
-    const { theme } = useTheme();
+    // const { theme } = useTheme();
 
-    const pic2 = theme !== 'dark'
-        ? { src: "/img/picprofil2_light.png", alt: "Pic2 light" }
-        : { src: "/img/picprofil2_dark.png", alt: "Pic2 dark" };
+    // const pic2 = theme !== 'dark'
+    //     ? { src: "/img/picprofil2_light.png", alt: "Pic2 light" }
+    //     : { src: "/img/picprofil2_dark.png", alt: "Pic2 dark" };
 
     const desc = content();
 
